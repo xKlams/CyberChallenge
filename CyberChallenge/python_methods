@@ -1,0 +1,50 @@
+Methods on Strings
+.strip()
+elimintase all spaces (non printable)
+.split()
+string -> list separating by spaces
+.split(char)
+you can decide the char to split (string maybe?)
+methods on lists
+
+.append("stuff")
+.remove("stuff")
+
+Dictionaries
+d = {"1dx0" : 1, "1dx1" : [3, 13 , 14 , 93]}
+d[idx0]
+d.get("idx0", 0)
+if i use get it returns the second argument if the firs one is not found
+-add elemtns
+d["key"] = element
+
+Iterations
+for i in range(n):
+
+for element in list:
+
+for key in dict
+
+for i, elem in enumerate(some_list):
+
+for elem1, elem2 in zip(list1, list2):
+
+zip itera elem1 in list1 and elem2 in list2
+
+def function(arg1, arg2, ...):
+	stuff()
+	return
+
+File opening
+f = open(filename, mode)
+f.close()
+f.read/readline/readlines()
+f.write(stuff)
+
+Read line by line
+f = open(..)
+for line in f:
+
+import library
+
+from library import function, variable

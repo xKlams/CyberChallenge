@@ -1,0 +1,59 @@
+from pwn import *
+import all function of pwntools
+
+Execture binary file
+r = process('./exe')
+pass some args
+r = process([ './exe1', 'arg1', 'arg2'])
+r = process('cat *grep |)
+r = remote('https', port)
+r.close()
+r.interactive()
+
+data = r.recv(10) gets 10 bytes
+data = r.recvline()
+data = r.recvuntil('>')
+
+data = r.recvline(timeout=10) #stops after 10 seconds
+data = r.recvall() #takes everything (use a timeout)
+data = r.recvall(timeout=1)
+
+send stuff
+
+r.sent('payload')
+r.sendline('payload')
+r.sendafter('>', 'payload') #waits after > to send payload
+
+Context
+context.log_level = 'debug' # prints everything that happens
+context.arch = 'amd64' #sets the arcitecture
+context.binary #necer udes by MagicFrank
+
+bytes.fromhex('414414') #from hexadecimal to bytes
+b'ABCD'.hex()		#from bytes to hexadecimal
+print(hexdump(b'ABCDEF'*2))	prints the hexsump (?)(other format)
+
+p32(0xhexinteger)	#from hexa to bytes in 32 bit
+u32(b'\xef\xbe\xad\xde')#unpacks to number in 32 bits
+p64/p32/p8 u64/u32/u8
+
+Generate assembly code
+asm("mov rax, 0; ret", arch="amd64").hex() from assembly to bytes
+
+disasm(bytes.fromhex("2312389999") inverse
+we can use this from terminal
+
+pen asm(blablab)
+
+Manage ELF files (exectuable)
+
+elf = ELF('s2-20')
+hex(elf.address) strarting address
+
+hex(elf.symbols['main]) address of main function
+			you can also do this for variables!
+elf.address = 0x5000 #shifts all the addresses (maybe useful for canary)
+
+
+
+

@@ -1,0 +1,12 @@
+ps
+list all process
+kill
+ctrl C on a processID
+kill -9
+kills a process
+strings filename
+output: all the strings ina binfile
+strings | grep "ccit"
+searches for ccit on the stringss of a binfile
+sl
+cmatrix

@@ -1,0 +1,8 @@
+Zn = Zmod(5)
+Zn(3) * Zn(2)		OR 		Zn(3) * 2
+1 / Zn(3)		finds inverse		OR		Zn(3) ^ -1
+pow(3, -1, 5)		python version still works
+
+
+Zn (7) / 3		multiplies 7 x 3^-1
+

@@ -1,0 +1,4 @@
+mov $42, %ax
+jg L
+movl %eax, (%esp)
+movq %rax, %rdi

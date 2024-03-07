@@ -1,0 +1,9 @@
+descrivere la lable
+
+.globl foo
+
+foo:
+	ret
+
+
+necessita di una riga vuota
