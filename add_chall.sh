@@ -1,2 +1,2 @@
-mkdir ./Challenges/$1
-cp template.py ./Challenges/$1/exploit.py
+mkdir ./$1
+cp template.py ./$1/exploit.py
